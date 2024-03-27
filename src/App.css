@@ -1,38 +1,130 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+header {
+  min-height: 4rem;
+  background-color: #124076;
+  box-sizing: border-box;
+  font-size: 2rem;
+  color: aliceblue;
   text-align: center;
+  padding: 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head{
+  max-width: 800px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero{
+  background-color: whitesmoke;
+  margin-bottom: 4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-container {
   display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.inner-container {
+  flex: 1;
+  padding: 1rem;
+}
+
+.text-container {
+  display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-flow: column wrap;
+}
+
+.text-size {
+  font-weight: bold;
+}
+
+.country-container {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.country-btn {
+  background-color: #124076;
+  color: aliceblue;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
+}
+
+.country-btn:hover {
+  box-shadow: 2px 2px black;
+}
+
+.city {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+span {
+  margin-bottom: .3rem;
+  box-sizing: border-box;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 1.2rem;
+}
+
+.city-desc {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-container {
+    flex-flow: column nowrap;
+  }
+}
+
+footer {
+  background: #124076;
+  min-height: 5rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-sizing: border-box;
+}
+
+/* .footer-image{
+  background-color: #124076;
+  max-width: 800px;
+} */
+
+footer p {
+  box-sizing: border-box;
+  max-width: 600px;
+  padding: 1rem;
+  margin: 1rem auto 0 auto;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
 }
